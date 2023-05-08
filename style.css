@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#5d5d63 50%, #445344 50%);
+}
+
+.wrapper {
+    position: absolute;
+    width: 31.25em;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(-135deg, blue, green);
+    box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    padding: 5em 4em;
+}
+
+.wrapper #userInput {
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+}
+
+.wrapper .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.wrapper select {
+    width: 8em;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #377dff;
+    border-radius: 0.3em;
+    padding: 0.45em 0.9em;
+    border: none;
+    outline: none;
+    appearance: none;
+    letter-spacing: 0.5px;
+    background-image: url("arrow.png");
+    background-repeat: no-repeat;
+    background-size: 1.1em;
+    background-position: 6em;
+    cursor: pointer;
+}
+
+.wrapper select::-ms-expand {
+    display: none;
+}
+
+.wrapper select option {
+    color: #377dff;
+    background-color: #ffffff;
+    font-size: 1.12em;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+}
+
+#submit {
+    color: #ffffff;
+    background: #377dff;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #ffffff;
+    background: #002f86;
+}
+
+#download:hover {
+    background: #002f86;
+}
+
+.selected {
+    display: none;
+}
+
+.color-inp {
+    width: 3.1em;
+    height: 3.4em;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.color-inp::-webkit-color-swatch {
+    border-radius: 0.3em;
+    border: 0.18em solid #191f3f;
+}
+
+.color-inp::-moz-color-swatch {
+    border-radius: 0.3em;
+    border: 0.18em solid #191f3f;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box button,
+.box a {
+    font-size: 1em;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    padding: 0.8em 2em;
+}
+
+.box button:dosabled {
+    color: #a3aab6;
+    background-color: transparent;
+    border: 0.18em solid #a3aab6;
+}
+
+.box button {
+    color: #377dff;
+    background-color: transparent;
+    border: 0.18em solid #377dff;
+}
+
+.box a {
+    color: #ffffff;
+    background-color: #377dff;
+    text-decoration: none;
+    border: 0.18em solid #377dff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+
+.hide {
+    display: none;
+}
